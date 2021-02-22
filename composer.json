@@ -1,0 +1,29 @@
+{
+  "name": "alexlcdee/symfony-worker",
+  "type": "symfony-bundle",
+  "description": "Run workers with Symfony Console",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {"name": "alexlcdee", "email": "info@alexlcdee.ru"}
+  ],
+  "require": {
+    "php": "^7.4",
+    "symfony/framework-bundle": "^5.0",
+    "symfony/console": "^4.4|^5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=9.3",
+    "ext-pcntl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "AlexLcDee\\SymfonyWorker\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AlexLcDee\\SymfonyWorker\\Tests\\": "tests/"
+    }
+  }
+}

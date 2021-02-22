@@ -1,0 +1,10 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  AlexLcDee\SymfonyWorker\Command\RunWorkerCommand:
+    arguments:
+      $workers: !tagged 'symfony_worker.worker'
+    tags:
+      - {name: 'console.command'}
